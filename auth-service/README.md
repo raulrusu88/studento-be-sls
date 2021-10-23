@@ -1,28 +1,9 @@
-<p align="center">
-  <img src="https://codingly-assets.s3-eu-west-1.amazonaws.com/Codingly+Logo.png" width="200px" height="200px"/>
-  </br>
-  <a href="https://codingly.io">codingly.io</a>
-  <br/>
-</p>
-<h1 align="center">Serverless Framework Auth0 Authorizer</h1>
-<p align="center">
-  <i><strong>A modern, ES6-friendly Lambda Authorizer ready for integration with Serverless Framework and Auth0.</strong></i>
-  <br/>
-  Based on the <a href="https://github.com/serverless/examples/tree/master/aws-node-auth0-custom-authorizers-api">serverless/examples/aws-node-auth0-custom-authorizers-api</a> example.
-</p>
-
-## Features
-
-- Test front-end application
-- Private endpoint for testing
-- Public endpoint for testing
-- ES6-friendly
-
 ## Getting started
 
 ### 1. Clone the repository (or generate a serverless project)
+
 ```sh
-sls create --name auth-service --template-url https://github.com/codingly-io/serverless-auth0-authorizer
+git clone https://github.com/raulrusu88/studento-be-sls.git
 cd auth-service
 ```
 
@@ -48,7 +29,7 @@ sls deploy -v
 
 ### 5. Final test
 
-To make sure everything works, send a POST request (using curl, Postman etc.) to your private endpoint.
+To make sure everything works, send a POST request via Postman or Insomnia to your private endpoint.
 
 You can grab a test token from Auth0. Make sure to provide your token in the headers like so:
 
@@ -56,11 +37,9 @@ You can grab a test token from Auth0. Make sure to provide your token in the hea
 "Authorization": "Bearer YOUR_TOKEN"
 ```
 
-You should be good to go!
-
 <hr/>
 
-## Bonus: Cross-stack authorization
+## Cross-stack authorization
 
 This is very useful in a microservices setup. For example, you have an Auth Service (this service) which owns anything auth/user-related, and a bunch of other services that require user authorization.
 Fear not, it is very easy to make your authorizer work anywhere else in your AWS account.
