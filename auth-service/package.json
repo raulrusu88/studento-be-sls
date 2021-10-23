@@ -1,0 +1,13 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "author": "Raul Rusu <raulrusu46@gmail.com>",
+  "description": "Protecting API endpoints with the help of Auth0",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "serverless-bundle": "^5.0.2"
+  }
+}
