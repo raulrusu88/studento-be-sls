@@ -42,3 +42,15 @@ sls deploy -f <functionName> --verbose
 ```
 sls logs -f <processFunction>
 ```
+
+### Checkmarks
+- [x] Authentication Service
+- [ ] Create a post
+- [ ] Access a post
+- [ ] User dashboard
+- [ ] Each user can see it's posts and can manage them from the dashboard
+- [ ] User change password (if account was made with Email&Password)
+- [ ] User avatar
+- [ ] Get all posts
+- [ ] Get posts that match with a location
+- [ ] TBA
